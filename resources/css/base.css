@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arimo, serif;
+    /*Arimo*/
+    /*Heebo*/
+    /*Merriweather*/
+    /*Montserrat*/
+
+    --color-white-0: rgb(255, 255, 255);
+
+    --color-gray-300: rgb(95, 93, 93); /*y*/
+    --color-gray-400: rgb(58, 58, 58); /*<---*/  
+    --color-gray-1000: rgb(5, 4, 4); /*y*/
+
+    --color-background-black: rgba(42, 38, 38, 0.8); /*85*/
+    --color-background-black-darker: rgba(50, 46, 46, 0.85);
+
+    --color-blue-800: rgb(2, 16, 61);
+    --color-blue-750: rgba(27, 116, 205, 0.1);
+    --color-blue-700: rgb(201, 214, 219);
+    --color-blue-400: rgb(181, 215, 223);
+    --color-blue-200: rgb(219, 225, 247);
+    --color-background: rgb(196, 235, 233);
+
+    --color-blue-500: rgb(222, 238, 242); --color-blue-old-500: rgb(171, 218, 223);
+    --color-blue-600: rgb(28, 184, 198);
+    --color-blue-150: rgb(229, 246, 248);
+    
+    --colorgrad-blue-200: linear-gradient(0deg, rgb(221, 250, 248), rgb(200, 241, 239));
+
+    --color-green-700: rgb(7, 159, 118);
+    --color-green-600: rgb(183, 230, 0);
+    
+    --color-red-500: rgb(193, 50, 14);
+
+    --colorshadow-img1: 2px 4px 8px rgb(67, 65, 65);
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.7rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-7: 1.7rem;
+    --space-8: 2rem;
+    --space-standard-margin: 1.0rem;
+    --space-standard-margin-half: 0.5rem;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 6px;
+    --border-radius-big: 8px;
+    --border-radius-verybig: 10px;
+    --border-radius-mainstyle: 15px;
+    --border-radius-forumSidebarIconsHover: 10px;
+
+    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    /*background-color: var(--color-background);*/
+    /*color: var(--color-blue-800);*/
+    /*font-weight: 700;*/
+    /*font-size: 14px;*/
+    /*font-size: 0.875rem;*/
+    background-color: var(--color-blue-700);
+    /*margin: 0;*/
+    /*background-image: url(/ocean.jpg);*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+
+    /*-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	-font-smoothing: antialiased;
+}
+
+main {
+    /*width: 90%;
+    max-width: 50rem;
+    margin: auto;*/
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue-800);
+    font-weight: 700;
+    font-size: 1.1rem;
+    /*-transform: uppercase;*/
+    /*font-family: Heebo, serif;*/
+}
+
+.btn {
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: var(--space-2) var(--space-6);
+    background-color: var(--color-blue-200);
+    color: var(--color-blue-800);
+    border: 1px solid var(--color-blue-800);
+    border-radius: var(--border-radius-small);
+}
+
+.btn:hover,
+.btn:active {
+    background-color: var(--color-background);
+}
+
+.btn-alt {
+    border: none;
+    /*color: var(--color-gray-400);*/
+}
+
+/*.btn-alt:hover,
+.btn-alt:active {
+    color: var(--color-blue-800);
+    background-color: var(--color-blue-200);
+}*/
+
+.alert {
+    border-radius: var(--border-radius-small);
+    /*background-color: var(--color-blue-400);*/
+    color: var(--color-red-500);
+    padding: var(--space-1) 0;
+    font-size: 1rem;
+}
+
+.alert h2 {
+    font-size: 1rem;
+    margin: var(--space-2) 0;
+    text-transform: uppercase;
+}
+
+.alert p {
+    margin: var(--space-2) 0;
+}
